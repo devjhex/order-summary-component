@@ -1,0 +1,177 @@
+/* COLORS */
+$paleBlue:hsl(225, 100%, 94%);
+$brightBlue:hsl(245, 75%, 52%);
+$veryPaleBlue:hsl(225, 100%, 98%);
+$dBlue:hsl(224, 23%, 55%);
+$darkBlue:hsl(223, 53%, 23%);
+
+/* FONT-WEIGHTS */
+$bold:500;
+$bolder:700;
+$boldest:900;
+
+/* FONTS */
+$font:'Red Hat Display', sans-serif;
+
+
+/* RESETS */
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    line-height: 1;
+}
+
+p{
+    font-size: 1rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: $font;
+    background-color: $paleBlue;
+}
+
+.order{
+    max-width: 340px;
+    border-radius: 25px;
+    background-color: white;
+
+    &__image{
+        display: block;
+        max-inline-size: 100%;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    &__title {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-weight: $boldest;
+        color: $darkBlue;
+    }
+
+    &__text{
+        line-height: 1.6;
+        text-align: center;
+        color: $dBlue;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .plan{
+        width: 85%;
+        margin-top: 1.5rem;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $veryPaleBlue;
+        padding: 20px;
+        border-radius: 15px;
+
+        .annual{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__text{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                span:nth-child(1){
+                    color:$darkBlue;
+                    font-weight: $boldest;
+                    margin-bottom:3px;
+                  
+                }
+                span:nth-child(2){
+                    color:$dBlue;
+                    font-weight: $bold;
+                  
+                }
+            }
+        }
+        a{
+            font-size: .9rem;
+            color: $brightBlue;
+            font-weight: $boldest;
+        }
+        a:hover{
+            color:  hsl(245, 90%, 69%);
+        }
+    }
+    .btn{
+        cursor: pointer;
+        display: block;
+        width: 85%;
+        height: 50px;
+        margin-inline: auto;
+        border-radius:10px;
+        border: none;
+        font-size: .9rem;
+        font-family: $font;
+        font-weight: $bolder;
+    }
+    .btn_payment{
+        background-color: $brightBlue;
+        color: white;
+        margin-top: 1.5rem;
+        box-shadow: 0px 29px 20px -3px rgba(0,0,0,0.13);  
+    }
+    .btn_payment:hover{
+        // background-color: hsl(255, 54%, 62%);
+        background-color: hsl(245, 90%, 69%);
+    }
+    .btn_cancel{
+        background-color:transparent;
+        color: $dBlue;
+        margin-top:.5rem;
+        margin-bottom: .5rem;
+        font-weight: $boldest;
+    }
+    .btn_cancel:hover{
+        color: $darkBlue;
+    }
+}
+@media (min-width:320px){
+    .order{
+        margin: .3rem;
+    }
+}
+ @media (min-width:700px){
+    .order{
+        max-width: 400px;
+        border-radius: 18px;
+
+        &__image{
+            border-radius: 18px 18px 0 0;
+        }
+
+        &__title {
+            margin-top: 2.3rem;
+            margin-bottom: 1.2rem;
+        }
+        .btn, .plan{
+            width: 80%;
+        }
+    }
+ }
