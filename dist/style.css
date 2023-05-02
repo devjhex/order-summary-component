@@ -28,7 +28,6 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Red Hat Display", sans-serif;
-  background-color: hsl(225, 100%, 94%);
 }
 
 .order {
@@ -135,6 +134,10 @@ body {
   }
 }
 @media (min-width: 700px) {
+  body {
+    background: url(/images/pattern-background-desktop.svg), #E1E9Ff;
+    background-repeat: no-repeat;
+  }
   .order {
     max-width: 400px;
     border-radius: 18px;
