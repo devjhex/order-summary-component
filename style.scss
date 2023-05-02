@@ -41,7 +41,7 @@ body{
     align-items: center;
     height: 100vh;
     font-family: $font;
-    // background-color: $paleBlue;
+    background-color: $paleBlue;
 }
 
 .order{
@@ -161,6 +161,7 @@ body{
     body{
         background: url(/images/pattern-background-desktop.svg), #E1E9Ff;
         background-repeat: no-repeat;
+        background-size: 100%;
     }
     .order{
         max-width: 400px;
