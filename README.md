@@ -27,6 +27,10 @@ Users should be able to:
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
+### Links
+- [Live Site](https://devjhex-order-summary-component-main.vercel.app/)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-ordersummarycard-using-flexbox-7BvR05jXxY)
+
 ## My process
 
 ### Built with
