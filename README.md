@@ -25,7 +25,7 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Order summary card coding challenge](./design/Solution.png)
 
 ### Links
 - [Live Site](https://devjhex-order-summary-component-main.vercel.app/)
